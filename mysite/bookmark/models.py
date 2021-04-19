@@ -11,4 +11,4 @@ class Bookmark(models.Model):
     url = models.URLField('Site URL')
 
     def __str__(self):
-        return "사이트 : " + self.site_name + ", URL 주소 : " + self.url
+        return self.site_name + "(" + self.url + ")"
